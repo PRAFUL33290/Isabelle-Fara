@@ -6,342 +6,719 @@
 <title>Devis Gala Bollywood - Camping Ronce-les-Bains - 26 septembre 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://parvati-india.fr">
+<link rel="preload" as="image" href="https://parvati-india.fr/wp-content/uploads/2023/10/Devotional-Background-For-god-worship-Animation-video.00_00_09_20.Still001.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="https://parvati-india.fr/wp-content/uploads/2023/10/LOGO-PARVATI-INDIA-2.png" fetchpriority="high">
+<link rel="preload" as="image" href="https://parvati-india.fr/wp-content/uploads/2026/01/LOGO-BOLLYWOOD.png" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --bg-1: #000000;
-    --bg-2: #130d08;
-    --card: rgba(0, 0, 0, 0.92);
-    --ink: #f5f2eb;
-    --muted: #c4beb4;
-    --primary: #b90d01;
-    --primary-deep: #8f0c02;
-    --accent: #d29d59;
-    --line: rgba(210, 157, 89, 0.25);
-    --white: #ffffff;
-    --shadow: 0 16px 40px rgba(0, 0, 0, 0.42);
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: "Manrope", sans-serif;
-    color: var(--ink);
-    background: linear-gradient(140deg, var(--bg-1), var(--bg-2));
-    min-height: 100vh;
-    line-height: 1.55;
-    padding: 20px;
-  }
-  .page {
-    max-width: 900px;
-    margin: 0 auto;
-    background: var(--card);
-    border-radius: 22px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-    border: 2px solid var(--accent);
-  }
-  .hero {
-    padding: 34px 36px 28px;
-    background: linear-gradient(130deg, rgba(185, 13, 1, 0.9), rgba(143, 12, 2, 0.82));
-    color: var(--white);
-    border-bottom: 2px solid var(--accent);
-  }
-  .hero-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-  .hero-logo { width: 190px; display: block; }
-  .hero-logo-text {
-    font-family: "Cinzel", serif;
-    font-weight: 800;
-    font-size: 1.5rem;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    line-height: 1.15;
-  }
-  .hero-logo-text span {
-    display: block;
-    font-family: "Manrope", sans-serif;
-    font-weight: 600;
-    font-size: 0.62rem;
-    letter-spacing: 0.28em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-top: 4px;
-  }
-  .devis-tag {
-    text-align: right;
-    font-size: 0.82rem;
-    color: #ffe4b5;
-  }
-  .devis-tag .num {
-    font-family: "Cinzel", serif;
-    font-size: 1.15rem;
-    font-weight: 800;
-    color: #fff;
-    margin-bottom: 4px;
-  }
-  h1 {
-    font-family: "Cinzel", serif;
-    font-size: clamp(1.4rem, 3vw, 2.1rem);
-    line-height: 1.25;
-    margin-top: 22px;
-  }
-  .hero-sub {
-    color: #f8dfb1;
-    margin-top: 8px;
-    font-size: 0.98rem;
-  }
-  .section {
-    padding: 28px 36px;
-    border-top: 1px solid var(--line);
-    background: rgba(10, 10, 10, 0.85);
-  }
-  .section h2 {
-    font-family: "Cinzel", serif;
-    font-size: 1.2rem;
-    color: #ffd999;
-    margin-bottom: 14px;
-  }
-  .parties {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-  .party {
-    background: rgba(18, 18, 18, 0.92);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 16px 18px;
-  }
-  .party-label {
-    font-size: 0.72rem;
-    text-transform: uppercase;
-    letter-spacing: 0.09em;
-    color: var(--accent);
-    font-weight: 800;
-    margin-bottom: 8px;
-  }
-  .party strong { color: #fff; }
-  .party p { font-size: 0.9rem; color: var(--muted); margin-top: 2px; }
-  .table-wrap {
-    overflow-x: auto;
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    background: rgba(22, 22, 22, 0.95);
-  }
-  table { width: 100%; border-collapse: collapse; min-width: 560px; }
-  th {
-    background: rgba(185, 13, 1, 0.2);
-    color: var(--accent);
-    text-align: left;
-    padding: 12px 14px;
-    font-size: 0.78rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    border-bottom: 1px solid var(--line);
-  }
-  td {
-    padding: 13px 14px;
-    border-bottom: 1px solid rgba(210, 157, 89, 0.2);
-    vertical-align: top;
-    font-size: 0.95rem;
-    color: #eee3cf;
-  }
-  td.num, th.num { text-align: right; white-space: nowrap; }
-  tr:last-child td { border-bottom: none; }
-  .strong { font-weight: 800; }
-  .totals {
-    margin-top: 18px;
-    margin-left: auto;
-    width: min(340px, 100%);
-    display: grid;
-    gap: 8px;
-  }
-  .totals-line {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.92rem;
-    color: var(--muted);
-  }
-  .totals-line.grand {
-    border-top: 1px solid var(--accent);
-    padding-top: 10px;
-    margin-top: 4px;
-    font-family: "Cinzel", serif;
-    font-size: 1.3rem;
-    font-weight: 800;
-    color: #ffd999;
-  }
-  .totals-line.grand span:last-child { color: #ffffff; }
-  .option-box {
-    margin-top: 18px;
-    background: rgba(185, 13, 1, 0.14);
-    border: 1px solid rgba(210, 157, 89, 0.4);
-    border-left: 5px solid var(--accent);
-    border-radius: 10px;
-    padding: 14px 16px;
-  }
-  .option-title { font-weight: 800; color: #ffdca8; margin-bottom: 4px; font-size: 0.92rem; }
-  .option-box p { font-size: 0.88rem; color: #ddd2be; }
-  .conditions { display: grid; gap: 10px; font-size: 0.9rem; color: var(--muted); }
-  .conditions li { margin-left: 18px; }
-  .contact-panel {
-    background: rgba(10, 10, 10, 0.96);
-    color: #edf4f6;
-    border-radius: 14px;
-    padding: 20px;
-    display: grid;
-    gap: 8px;
-    border: 1px solid var(--accent);
-  }
-  .contact-panel h3 { font-family: "Cinzel", serif; font-size: 1.1rem; color: #ffd999; }
-  .contact-line { color: #e8d7bc; font-weight: 600; font-size: 0.92rem; }
-  .contact-line a { color: #ffd080; text-decoration: none; }
-  .contact-line a:hover { text-decoration: underline; }
-  .cta-row { margin-top: 18px; display: flex; gap: 12px; flex-wrap: wrap; }
-  .btn {
-    display: inline-flex; align-items: center; justify-content: center;
-    border-radius: 10px; padding: 12px 20px; font-weight: 800;
-    text-decoration: none; border: 2px solid transparent;
-    transition: transform 0.18s ease, background 0.18s ease;
-  }
-  .btn-primary { background: var(--primary); color: var(--white); }
-  .btn-primary:hover { background: var(--primary-deep); transform: translateY(-1px); }
-  .btn-secondary { background: transparent; border-color: rgba(210, 157, 89, 0.9); color: #ffe0ad; }
-  .btn-secondary:hover { background: rgba(255, 255, 255, 0.12); }
-  .footer-note {
-    text-align: center;
-    font-size: 0.8rem;
-    color: #c5a77f;
-    padding: 22px 20px 26px;
-    background: rgba(10, 10, 10, 0.85);
-    border-top: 1px solid var(--line);
-  }
-  @media (max-width: 700px) {
-    .parties { grid-template-columns: 1fr; }
-    .hero, .section { padding: 22px 18px; }
-    .hero-top { flex-direction: column; }
-    .devis-tag { text-align: left; }
-    table { min-width: 480px; }
-    .cta-row { flex-direction: column; align-items: stretch; }
-    .btn { width: 100%; }
-  }
-  @media print {
-    body { background: #fff; padding: 0; }
-    .page { border: none; box-shadow: none; border-radius: 0; }
-    .cta-row { display: none; }
-  }
+    :root {
+        --bg-1: #000000;
+        --bg-2: #130d08;
+        --card: rgba(0, 0, 0, 0.92);
+        --ink: #f5f2eb;
+        --muted: #c4beb4;
+        --primary: #b90d01;
+        --primary-deep: #8f0c02;
+        --accent: #d29d59;
+        --line: rgba(210, 157, 89, 0.25);
+        --white: #ffffff;
+        --success: #1f9b6b;
+        --shadow: 0 16px 40px rgba(0, 0, 0, 0.42);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+        font-family: "Manrope", sans-serif;
+        color: var(--ink);
+        background: linear-gradient(140deg, var(--bg-1), var(--bg-2));
+        min-height: 100vh;
+        line-height: 1.55;
+        padding: 20px;
+    }
+
+    body::before {
+        content: '';
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        background:
+            radial-gradient(circle at 10% 15%, rgba(210, 157, 89, 0.18), transparent 40%),
+            radial-gradient(circle at 90% 10%, rgba(185, 13, 1, 0.2), transparent 42%),
+            linear-gradient(135deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)),
+            url("https://parvati-india.fr/wp-content/uploads/2023/10/Devotional-Background-For-god-worship-Animation-video.00_00_09_20.Still001.jpg") center/cover;
+        background-color: var(--bg-2);
+    }
+
+    .page {
+        max-width: 1150px;
+        margin: 0 auto;
+        background: var(--card);
+        border-radius: 22px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        border: 2px solid var(--accent);
+    }
+
+    .hero {
+        padding: 42px 32px 30px;
+        background:
+            linear-gradient(130deg, rgba(185, 13, 1, 0.9), rgba(143, 12, 2, 0.82)),
+            url("https://parvati-india.fr/wp-content/uploads/2023/10/Devotional-Background-For-god-worship-Animation-video.00_00_09_20.Still001.jpg") center/cover;
+        color: var(--white);
+        border-bottom: 2px solid var(--accent);
+        text-align: center;
+    }
+
+    .hero-logo { width: min(320px, 70vw); margin: 0 auto 2px; display: block; }
+    .hero-bollywood { width: min(200px, 48vw); margin: 0 auto 14px; display: block; }
+
+    .event-pill {
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.4);
+        border: 1px solid rgba(210, 157, 89, 0.75);
+        color: #ffe4b5;
+        font-size: 0.84rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        border-radius: 999px;
+        padding: 6px 14px;
+        margin-bottom: 14px;
+        animation: appear 0.45s ease;
+    }
+
+    h1 {
+        font-family: "Cinzel", serif;
+        font-size: clamp(1.55rem, 3.2vw, 2.5rem);
+        line-height: 1.2;
+        margin-bottom: 10px;
+        animation: appear 0.55s ease;
+    }
+
+    .hero-sub {
+        color: #f8dfb1;
+        max-width: 780px;
+        margin: 0 auto 24px;
+        font-size: 1rem;
+        animation: appear 0.65s ease;
+    }
+
+    .devis-meta {
+        display: flex;
+        justify-content: center;
+        gap: 22px;
+        flex-wrap: wrap;
+        font-size: 0.82rem;
+        color: #ffe4b5;
+        margin-bottom: 22px;
+    }
+    .devis-meta strong { color: #fff; }
+
+    .formula-grid {
+        display: flex;
+        justify-content: center;
+        animation: lift 0.6s ease;
+    }
+
+    .formula-card {
+        background: rgba(0, 0, 0, 0.8);
+        color: #f7f0e1;
+        border-radius: 14px;
+        border: 2px solid var(--accent);
+        box-shadow: 0 10px 24px rgba(185, 13, 1, 0.3);
+        padding: 22px 26px;
+        min-height: 180px;
+        width: min(340px, 100%);
+        display: grid;
+        gap: 8px;
+    }
+
+    .formula-label {
+        font-size: 0.76rem;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        color: var(--accent);
+        font-weight: 800;
+    }
+
+    .formula-artists {
+        font-family: "Cinzel", serif;
+        font-size: clamp(1.45rem, 2.7vw, 2rem);
+        line-height: 1.2;
+        color: #ffffff;
+    }
+
+    .formula-detail { font-size: 0.95rem; color: #ddd2be; font-weight: 600; }
+    .formula-price { margin-top: 4px; font-size: 1.5rem; font-weight: 800; color: #ffd999; }
+
+    .cta-row { margin-top: 18px; display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+
+    .btn {
+        display: inline-flex; align-items: center; justify-content: center;
+        border-radius: 10px; padding: 12px 20px; font-weight: 800;
+        text-decoration: none; border: 2px solid transparent;
+        transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease;
+    }
+    .btn-primary { background: var(--primary); color: var(--white); }
+    .btn-primary:hover { background: var(--primary-deep); transform: translateY(-1px); }
+    .btn-secondary { background: transparent; border-color: rgba(210, 157, 89, 0.9); color: #ffe0ad; }
+    .btn-secondary:hover { background: rgba(255, 255, 255, 0.12); }
+
+    .section { padding: 34px 32px; border-top: 1px solid var(--line); background: rgba(10, 10, 10, 0.85); opacity: 1; }
+    .section.will-animate { opacity: 0; transform: translateY(10px); transition: opacity 0.45s ease, transform 0.45s ease; }
+    .section.animated { opacity: 1; transform: translateY(0); }
+
+    .section h2 { font-family: "Cinzel", serif; font-size: clamp(1.2rem, 2.2vw, 1.75rem); margin-bottom: 8px; }
+    .section p.lead { color: var(--muted); margin-bottom: 18px; }
+
+    .parties { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .party { background: rgba(18, 18, 18, 0.92); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
+    .party-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.09em; color: var(--accent); font-weight: 800; margin-bottom: 8px; }
+    .party strong { color: #fff; }
+    .party p { font-size: 0.9rem; color: var(--muted); margin-top: 2px; }
+
+    .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: rgba(22, 22, 22, 0.95); }
+    table { width: 100%; border-collapse: collapse; min-width: 560px; }
+    th {
+        background: rgba(185, 13, 1, 0.2); color: var(--accent); text-align: left;
+        padding: 12px 14px; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.06em;
+        border-bottom: 1px solid var(--line);
+    }
+    td { padding: 13px 14px; border-bottom: 1px solid rgba(210, 157, 89, 0.2); vertical-align: top; font-size: 0.95rem; color: #eee3cf; }
+    td.num, th.num { text-align: right; white-space: nowrap; }
+    tr:last-child td { border-bottom: none; }
+    .strong { font-weight: 800; }
+
+    .option-box {
+        margin-top: 16px;
+        background: rgba(185, 13, 1, 0.14);
+        border: 1px solid rgba(210, 157, 89, 0.4);
+        border-left: 5px solid var(--accent);
+        border-radius: 10px;
+        padding: 14px 16px;
+    }
+    .option-title { font-weight: 800; color: #ffdca8; margin-bottom: 4px; font-size: 0.92rem; }
+    .option-box p { font-size: 0.88rem; color: #ddd2be; }
+
+    .chips { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip {
+        background: rgba(0, 0, 0, 0.65); border: 1px solid rgba(210, 157, 89, 0.35);
+        border-radius: 999px; padding: 6px 11px; font-size: 0.84rem; font-weight: 700; color: #f3d39b;
+    }
+
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .card { background: rgba(18, 18, 18, 0.92); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+
+    .contact-panel {
+        background: rgba(10, 10, 10, 0.96); color: #edf4f6; border-radius: 14px; padding: 20px;
+        display: grid; gap: 10px; border: 1px solid var(--accent);
+    }
+    .contact-panel h3 { font-family: "Cinzel", serif; font-size: 1.2rem; }
+    .contact-line { color: #e8d7bc; font-weight: 600; }
+    .contact-line a { color: #ffd080; text-decoration: none; }
+    .contact-line a:hover { text-decoration: underline; }
+
+    @keyframes appear { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes lift { from { opacity: 0; transform: translateY(16px) scale(0.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
+
+    /* Initiations Card Grid */
+    .initiation-grid-wrap { display: grid; gap: 20px; }
+    .initiation-grid-hint { font-size: 0.82rem; color: var(--muted); font-style: italic; }
+    .init-duration-label {
+        font-family: "Cinzel", serif; font-size: 1.25rem; font-weight: 700; color: #ffd999;
+        margin-bottom: 14px; padding: 10px 16px; background: rgba(185, 13, 1, 0.18);
+        border-left: 5px solid var(--accent); border-radius: 8px; letter-spacing: 0.03em;
+    }
+    .init-cards-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .init-card {
+        background: rgba(18, 18, 18, 0.92); border: 2px solid rgba(210, 157, 89, 0.25); border-radius: 14px;
+        padding: 20px 16px; cursor: pointer; font-family: "Manrope", sans-serif; text-align: center;
+        transition: border-color 0.2s ease, background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+        position: relative; outline: none;
+    }
+    .init-card:hover:not(.active) { border-color: var(--accent); background: rgba(30, 20, 10, 0.95); transform: translateY(-2px); }
+    .init-card.active {
+        border-color: var(--primary);
+        background: linear-gradient(135deg, rgba(185, 13, 1, 0.22), rgba(143, 12, 2, 0.14));
+        box-shadow: 0 8px 24px rgba(185, 13, 1, 0.28);
+        transform: translateY(-2px);
+    }
+    .init-card.active::after {
+        content: "\2713"; position: absolute; top: 8px; right: 10px;
+        font-size: 0.82rem; color: var(--primary); font-weight: 800;
+    }
+    .init-card-icon { font-size: 1.8rem; margin-bottom: 8px; display: block; }
+    .init-card-icon svg { width: 34px; height: 34px; display: block; margin: 0 auto; }
+    .init-card-audience {
+        font-size: 0.8rem; font-weight: 700; color: var(--muted); text-transform: uppercase;
+        letter-spacing: 0.07em; margin-bottom: 10px;
+    }
+    .init-card.active .init-card-audience { color: #ffd999; }
+    .init-card-price { font-family: "Cinzel", serif; font-size: 1.65rem; font-weight: 800; color: #ffd999; line-height: 1; }
+    .init-card.active .init-card-price { color: #ffffff; }
+    .init-card-currency { font-size: 1rem; }
+
+    /* Bulle flottante total */
+    .floating-total {
+        position: fixed; bottom: 28px; right: 28px; width: 88px; height: 88px; border-radius: 50%;
+        background: #000000; border: 2px solid rgba(210, 157, 89, 0.6);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7), 0 0 0 4px rgba(210, 157, 89, 0.12);
+        display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px;
+        color: #ffffff; z-index: 9999; cursor: default; opacity: 0;
+        transform: scale(0.6) translateY(16px); pointer-events: none;
+        transition: opacity 0.28s cubic-bezier(.4,0,.2,1), transform 0.28s cubic-bezier(.4,0,.2,1);
+    }
+    .floating-total.visible { opacity: 1; transform: scale(1) translateY(0); pointer-events: auto; }
+    .floating-total-label { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(210, 157, 89, 0.9); font-weight: 800; line-height: 1; }
+    .floating-total-amount { font-family: "Cinzel", serif; font-size: 1.15rem; font-weight: 800; color: #ffffff; line-height: 1.1; }
+    .floating-total-currency { font-size: 0.62rem; color: rgba(255,255,255,0.65); font-weight: 700; letter-spacing: 0.05em; }
+
+    .total-callout-hint {
+        display: flex; align-items: center; gap: 10px; background: rgba(210, 157, 89, 0.10);
+        border: 1px solid rgba(210, 157, 89, 0.45); border-radius: 12px; padding: 14px 18px;
+        margin-bottom: 0; font-size: 0.9rem; font-weight: 600; color: #f3d39b;
+    }
+    .total-callout-hint .hint-icon { font-size: 1.4rem; flex-shrink: 0; }
+
+    .global-total-banner {
+        background: linear-gradient(135deg, rgba(185, 13, 1, 0.22), rgba(0, 0, 0, 0.7));
+        border: 2px solid var(--accent); border-radius: 16px; padding: 24px 28px;
+    }
+    .global-total-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.09em; color: var(--accent); font-weight: 800; margin-bottom: 16px; }
+    .global-total-items { display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px; }
+    .global-total-item {
+        display: flex; justify-content: space-between; align-items: center; padding: 10px 14px;
+        background: rgba(0, 0, 0, 0.32); border: 1px solid rgba(210, 157, 89, 0.28); border-radius: 10px;
+        font-size: 0.92rem; font-weight: 600; color: #f3d39b;
+    }
+    .global-total-item-price { font-weight: 800; color: #ffd999; white-space: nowrap; margin-left: 16px; }
+    .global-total-line {
+        display: flex; justify-content: space-between; align-items: center;
+        border-top: 1px solid rgba(210, 157, 89, 0.45); padding-top: 16px;
+        font-family: "Cinzel", serif; font-size: 1.05rem; font-weight: 700; color: #ffd999;
+    }
+    .global-total-price { font-size: 2.2rem; font-weight: 800; color: #ffffff; transition: opacity 0.15s ease; }
+
+    /* Site Footer */
+    .site-footer { background: #000000; border-top: 2px solid rgba(210, 157, 89, 0.4); padding: 40px 36px 24px; }
+    .site-footer-grid {
+        display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; padding-bottom: 28px;
+        border-bottom: 1px solid rgba(210, 157, 89, 0.2);
+    }
+    .sf-col-title {
+        font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase;
+        color: var(--accent); margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); display: inline-block;
+    }
+    .sf-logo { width: 130px; margin-bottom: 12px; display: block; opacity: 0.92; }
+    .sf-tagline { font-size: 0.8rem; font-weight: 700; color: #c4a87a; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .sf-sub { font-size: 0.78rem; color: #7a6a5a; font-style: italic; margin-bottom: 14px; }
+    .sf-address { font-size: 0.8rem; color: #9a8a78; line-height: 1.7; }
+    .sf-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .sf-list li { display: flex; align-items: flex-start; gap: 8px; font-size: 0.82rem; color: #9a8878; line-height: 1.5; }
+    .sf-list li::before { content: "\2022"; color: var(--accent); flex-shrink: 0; margin-top: 1px; }
+    .sf-list li strong { color: #c4a87a; }
+    .sf-list a { color: #c4a87a; text-decoration: none; transition: color 0.15s; }
+    .sf-list a:hover { color: #ffd999; text-decoration: underline; }
+    .sf-bottom {
+        display: flex; justify-content: space-between; align-items: center; padding-top: 18px;
+        font-size: 0.74rem; color: #5a4e42; flex-wrap: wrap; gap: 8px;
+    }
+    .sf-bottom a { color: #7a6a5a; text-decoration: none; }
+    .sf-bottom a:hover { color: var(--accent); }
+
+    @media (max-width: 930px) {
+        .grid-2 { grid-template-columns: 1fr; }
+        .parties { grid-template-columns: 1fr; }
+        .hero, .section { padding: 24px 18px; }
+        table { min-width: 560px; }
+        .init-cards-row { grid-template-columns: repeat(2, 1fr); }
+        .cta-row { flex-direction: column; align-items: stretch; }
+        .btn { width: 100%; justify-content: center; }
+    }
+
+    @media (max-width: 600px) {
+        .init-cards-row { grid-template-columns: 1fr; }
+        .section { padding: 20px 14px; }
+        .hero { padding: 28px 14px 22px; }
+        h1 { font-size: 1.35rem; }
+        .init-card { padding: 16px 12px; }
+        .global-total-banner { padding: 18px 16px; }
+        .floating-total { width: 74px; height: 74px; bottom: 16px; right: 16px; }
+        .floating-total-amount { font-size: 0.95rem; }
+        .site-footer { padding: 28px 18px 18px; }
+        .site-footer-grid { grid-template-columns: 1fr; gap: 28px; }
+        .sf-bottom { flex-direction: column; align-items: flex-start; }
+        body { padding: 0; background: #000000; }
+        body::before { display: none; }
+        .page { border-radius: 0; border: none; box-shadow: none; }
+    }
+
+    @media (max-width: 860px) {
+        .site-footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+    }
+
+    @media print {
+        body { background: #fff; padding: 0; }
+        .page { border: none; box-shadow: none; border-radius: 0; }
+        .cta-row, .floating-total { display: none; }
+    }
 </style>
 </head>
 <body>
 <main class="page">
-  <header class="hero">
-    <div class="hero-top">
-      <div class="hero-logo-text">Parvati India<span>Spectacles &amp; danse indienne</span></div>
-      <div class="devis-tag">
-        <div class="num">Devis n&deg; 2026-0726-ISF</div>
-        <div>Date d'&eacute;mission : 13 juillet 2026</div>
-        <div>Valable jusqu'au : 13 ao&ucirc;t 2026</div>
-      </div>
-    </div>
-    <h1>Gala Bollywood &mdash; Samedi 26 septembre 2026</h1>
-    <p class="hero-sub">Camping de Ronce-les-Bains, Charente-Maritime &mdash; Spectacle de danse Bollywood avec 6 danseuses</p>
-  </header>
+    <header class="hero">
+        <img class="hero-logo" src="https://parvati-india.fr/wp-content/uploads/2023/10/LOGO-PARVATI-INDIA-2.png" alt="Logo Parvati India">
+        <img class="hero-bollywood" src="https://parvati-india.fr/wp-content/uploads/2026/01/LOGO-BOLLYWOOD.png" alt="Logo Bollywood">
+        <div class="event-pill">Gala Bollywood &mdash; Camping de Ronce-les-Bains &mdash; 26 septembre 2026</div>
+        <h1>Devis &mdash; Spectacle de danse Bollywood</h1>
+        <p class="hero-sub">
+            Spectacle avec <strong>6 danseuses</strong>, chor&eacute;graphies inspir&eacute;es du cin&eacute;ma indien, moment participatif final o&ugrave; le public danse avec les artistes.
+        </p>
+        <div class="devis-meta">
+            <span>Devis n&deg; <strong>2026-0726-ISF</strong></span>
+            <span>&Eacute;mis le <strong>13 juillet 2026</strong></span>
+            <span>Valable jusqu'au <strong>13 ao&ucirc;t 2026</strong></span>
+        </div>
 
-  <section class="section">
-    <div class="parties">
-      <div class="party">
-        <div class="party-label">Prestataire</div>
-        <strong>Parvati India</strong>
-        <p>Praful Amravati, G&eacute;rant</p>
-        <p>Rue des pins, 33290 Parempuyre, France</p>
-        <p>SIRET : 852 373 570 00013</p>
-        <p>contact@parvati-india.fr</p>
-      </div>
-      <div class="party">
-        <div class="party-label">Client</div>
-        <strong>Isabelle Fara</strong>
-        <p>Siblu &mdash; Camping de Ronce-les-Bains</p>
-        <p>Ronce-les-Bains, Charente-Maritime</p>
-        <p>Isabelle.Fara@siblu.fr</p>
-      </div>
-    </div>
-  </section>
+        <div class="formula-grid" aria-label="Formule retenue">
+            <article class="formula-card">
+                <div class="formula-label">Formule retenue</div>
+                <div class="formula-artists">6 danseuses</div>
+                <div class="formula-detail">Dur&eacute;e : 15 &agrave; 20 minutes</div>
+                <div class="formula-price">400 EUR</div>
+                <div style="font-size:0.75rem;color:rgba(210,157,89,0.9);font-weight:700;margin-top:4px">+ 150 EUR transport (Ronce-les-Bains)</div>
+            </article>
+        </div>
 
-  <section class="section">
-    <h2>D&eacute;tail de la prestation</h2>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Prestation</th>
-            <th>D&eacute;tail</th>
-            <th class="num">Montant</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="strong">Spectacle Bollywood</td>
-            <td>
-              6 danseuses &mdash; chor&eacute;graphies inspir&eacute;es du cin&eacute;ma indien<br>
-              Dur&eacute;e : 15 &agrave; 20 minutes, avec moment participatif final o&ugrave; le public est invit&eacute; &agrave; danser avec les artistes<br>
-              <span style="font-size:0.82rem;color:var(--muted)">Prestation r&eacute;alis&eacute;e dans le cadre du gala &mdash; sans atelier d'initiation</span>
-            </td>
-            <td class="num strong">400,00&nbsp;&euro;</td>
-          </tr>
-          <tr>
-            <td class="strong">Forfait transport</td>
-            <td>Trajet aller/retour jusqu'&agrave; Ronce-les-Bains (carburant, p&eacute;ages, frais kilom&eacute;triques)</td>
-            <td class="num strong">150,00&nbsp;&euro;</td>
-          </tr>
-          <tr>
-            <td class="strong">H&eacute;bergement</td>
-            <td>Pris en charge par le camping, comme convenu</td>
-            <td class="num strong">Offert</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+        <div class="cta-row">
+            <a class="btn btn-primary" href="mailto:Isabelle.Fara@siblu.fr?subject=Devis%20Gala%20Bollywood%20-%2026%20septembre%202026&body=Bonjour%20Isabelle%2C%0A%0AVeuillez%20trouver%20ci-joint%20le%20devis%20pour%20le%20spectacle%20Bollywood%20avec%206%20danseuses%2C%20le%2026%20septembre%202026%20%C3%A0%20Ronce-les-Bains.%0A%0ACordialement%2C%0APraful">Envoyer par email</a>
+            <a class="btn btn-secondary" href="#" onclick="window.print(); return false;">Imprimer / PDF</a>
+        </div>
+    </header>
 
-    <div class="totals">
-      <div class="totals-line"><span>Sous-total prestation</span><span>400,00&nbsp;&euro;</span></div>
-      <div class="totals-line"><span>Forfait transport</span><span>150,00&nbsp;&euro;</span></div>
-      <div class="totals-line grand"><span>Total</span><span>550,00&nbsp;&euro;</span></div>
-    </div>
+    <section class="section">
+        <div class="parties">
+            <div class="party">
+                <div class="party-label">Prestataire</div>
+                <strong>Parvati India</strong>
+                <p>Praful Amravati, G&eacute;rant</p>
+                <p>Rue des pins, 33290 Parempuyre, France</p>
+                <p>SIRET : 852 373 570 00013</p>
+                <p>contact@parvati-india.fr</p>
+            </div>
+            <div class="party">
+                <div class="party-label">Client</div>
+                <strong>Isabelle Fara</strong>
+                <p>Siblu &mdash; Camping de Ronce-les-Bains</p>
+                <p>Ronce-les-Bains, Charente-Maritime</p>
+                <p>Isabelle.Fara@siblu.fr</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="option-box">
-      <div class="option-title">Option disponible sur demande</div>
-      <p>Une initiation Bollywood participative (30&nbsp;min &agrave; partir de 70&nbsp;&euro;, 1&nbsp;h &agrave; partir de 100&nbsp;&euro;) peut &ecirc;tre ajout&eacute;e en compl&eacute;ment du spectacle si vous souhaitez l'int&eacute;grer &agrave; une autre animation de votre programme.</p>
-    </div>
-  </section>
+    <section class="section" id="spectacle">
+        <h2>Spectacle Bollywood</h2>
+        <p class="lead">
+            Chor&eacute;graphies inspir&eacute;es du cin&eacute;ma indien, avec un moment convivial final o&ugrave; les spectateurs sont invit&eacute;s &agrave; danser avec les artistes.
+        </p>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Prestation</th>
+                        <th>D&eacute;tail</th>
+                        <th class="num">Montant</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="strong">Spectacle Bollywood</td>
+                        <td>
+                            6 danseuses &mdash; chor&eacute;graphies inspir&eacute;es du cin&eacute;ma indien<br>
+                            Dur&eacute;e : 15 &agrave; 20 minutes, avec moment participatif final o&ugrave; le public est invit&eacute; &agrave; danser avec les artistes<br>
+                            <span style="font-size:0.82rem;color:var(--muted)">Prestation r&eacute;alis&eacute;e dans le cadre du gala &mdash; sans atelier d'initiation</span>
+                        </td>
+                        <td class="num strong">400,00&nbsp;&euro;</td>
+                    </tr>
+                    <tr>
+                        <td class="strong">Forfait transport</td>
+                        <td>Trajet aller/retour jusqu'&agrave; Ronce-les-Bains (carburant, p&eacute;ages, frais kilom&eacute;triques)</td>
+                        <td class="num strong">150,00&nbsp;&euro;</td>
+                    </tr>
+                    <tr>
+                        <td class="strong">H&eacute;bergement</td>
+                        <td>Pris en charge par le camping, comme convenu</td>
+                        <td class="num strong">Offert</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-  <section class="section">
-    <h2>Conditions</h2>
-    <ul class="conditions">
-      <li>Devis valable 30 jours &agrave; compter de la date d'&eacute;mission.</li>
-      <li>Acompte de 30&nbsp;% &agrave; la r&eacute;servation, solde le jour de la prestation.</li>
-      <li>Nombre de danseuses fix&eacute; &agrave; 6, conform&eacute;ment &agrave; la contrainte d'un nombre pair pour garantir des chor&eacute;graphies harmonieuses.</li>
-      <li>Pr&eacute;voir un espace de repr&eacute;sentation d&eacute;gag&eacute; et un point d'alimentation &eacute;lectrique &agrave; proximit&eacute; (d&eacute;tails techniques transmis apr&egrave;s validation).</li>
-      <li>H&eacute;bergement sur place confirm&eacute; par le camping pour l'&eacute;quipe artistique.</li>
-    </ul>
-  </section>
+        <div class="option-box">
+            <div class="option-title">Option disponible sur demande</div>
+            <p>Une initiation Bollywood participative peut &ecirc;tre ajout&eacute;e en compl&eacute;ment du spectacle si vous souhaitez l'int&eacute;grer &agrave; une autre animation de votre programme. Non retenue pour ce gala.</p>
+        </div>
+    </section>
 
-  <section class="section">
-    <div class="contact-panel">
-      <h3>Pour valider ce devis</h3>
-      <div class="contact-line">Praful Amravati &mdash; <a href="tel:0631321053">06 31 32 10 53</a></div>
-      <div class="contact-line"><a href="mailto:contact@parvati-india.fr">contact@parvati-india.fr</a></div>
-    </div>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="mailto:Isabelle.Fara@siblu.fr?subject=Devis%20Gala%20Bollywood%20-%2026%20septembre%202026&body=Bonjour%20Isabelle%2C%0A%0AVeuillez%20trouver%20ci-joint%20le%20devis%20pour%20le%20spectacle%20Bollywood%20avec%206%20danseuses%2C%20le%2026%20septembre%202026%20%C3%A0%20Ronce-les-Bains.%0A%0ACordialement%2C%0APraful">Envoyer par email</a>
-      <a class="btn btn-secondary" href="#" onclick="window.print(); return false;">Imprimer / PDF</a>
-    </div>
-  </section>
+    <section class="section" id="initiations">
+        <h2>Initiations danse Bollywood <span style="font-size:0.62em;color:var(--muted);font-weight:600;text-transform:none;letter-spacing:0">(option, non incluse dans le devis)</span></h2>
+        <p class="lead">Atelier participatif o&ugrave; le public apprend une courte chor&eacute;graphie Bollywood. Disponible en compl&eacute;ment du spectacle si vous souhaitez l'ajouter &agrave; votre s&eacute;lection.</p>
 
-  <div class="footer-note">Parvati India &mdash; SIRET 852 373 570 00013 &mdash; Rue des pins, 33290 Parempuyre &mdash; contact@parvati-india.fr &mdash; 06 31 32 10 53</div>
+        <div class="initiation-grid-wrap">
+            <p class="initiation-grid-hint">S&eacute;lection facultative &mdash; le total ci-dessous se met &agrave; jour automatiquement si vous cochez une option.</p>
+
+            <div>
+                <div class="init-duration-label">30 minutes</div>
+                <div class="init-cards-row" role="group" aria-label="Formules 30 minutes">
+                    <button class="init-card" data-audience="Enfants" data-duration="30" data-price="70">
+                        <span class="init-card-icon"><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="6" r="3"/><path d="M6 21v-2a6 6 0 0 1 12 0v2"/><path d="M9 11.5l1.5 3h3l1.5-3"/></svg></span>
+                        <div class="init-card-audience">Enfants</div>
+                        <div class="init-card-price">70 <span class="init-card-currency">EUR</span></div>
+                    </button>
+                    <button class="init-card" data-audience="Adultes" data-duration="30" data-price="100">
+                        <span class="init-card-icon"><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="6" r="3.5"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/></svg></span>
+                        <div class="init-card-audience">Adultes</div>
+                        <div class="init-card-price">100 <span class="init-card-currency">EUR</span></div>
+                    </button>
+                    <button class="init-card" data-audience="Mixte" data-duration="30" data-price="100">
+                        <span class="init-card-icon"><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="6" r="3"/><path d="M2 21v-2a6 6 0 0 1 12 0v2"/><circle cx="18" cy="6" r="3"/><path d="M17 21v-2a5.9 5.9 0 0 0-3-5.2"/></svg></span>
+                        <div class="init-card-audience">Mixte</div>
+                        <div class="init-card-price">100 <span class="init-card-currency">EUR</span></div>
+                    </button>
+                </div>
+            </div>
+
+            <div>
+                <div class="init-duration-label">1 heure</div>
+                <div class="init-cards-row" role="group" aria-label="Formules 1 heure">
+                    <button class="init-card" data-audience="Enfants" data-duration="60" data-price="100">
+                        <span class="init-card-icon"><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="6" r="3"/><path d="M6 21v-2a6 6 0 0 1 12 0v2"/><path d="M9 11.5l1.5 3h3l1.5-3"/></svg></span>
+                        <div class="init-card-audience">Enfants</div>
+                        <div class="init-card-price">100 <span class="init-card-currency">EUR</span></div>
+                    </button>
+                    <button class="init-card" data-audience="Adultes" data-duration="60" data-price="120">
+                        <span class="init-card-icon"><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="6" r="3.5"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/></svg></span>
+                        <div class="init-card-audience">Adultes</div>
+                        <div class="init-card-price">120 <span class="init-card-currency">EUR</span></div>
+                    </button>
+                    <button class="init-card" data-audience="Mixte" data-duration="60" data-price="120">
+                        <span class="init-card-icon"><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="6" r="3"/><path d="M2 21v-2a6 6 0 0 1 12 0v2"/><circle cx="18" cy="6" r="3"/><path d="M17 21v-2a5.9 5.9 0 0 0-3-5.2"/></svg></span>
+                        <div class="init-card-audience">Mixte</div>
+                        <div class="init-card-price">120 <span class="init-card-currency">EUR</span></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="transport">
+        <h2>Frais de transport</h2>
+        <p class="lead">Les frais de transport sont <strong style="color:#ffd999">obligatoires</strong> et inclus syst&eacute;matiquement dans le devis.</p>
+
+        <div class="option-box" style="margin-top:0;border-left-color:var(--primary)">
+            <div class="option-title" style="font-size:1rem">&#128663;&nbsp; Parempuyre &harr; Ronce-les-Bains &mdash; aller/retour</div>
+            <p style="color:#ddd2be;font-size:0.9rem;margin-top:8px">
+                Forfait couvrant les frais de carburant, de p&eacute;ages et les frais kilom&eacute;triques pour l'&eacute;quipe artistique jusqu'&agrave; Ronce-les-Bains, Charente-Maritime.
+            </p>
+            <div class="chips" style="margin-top:12px">
+                <span class="chip">&#128205; Parempuyre</span>
+                <span class="chip">&harr;</span>
+                <span class="chip">&#128205; Ronce-les-Bains</span>
+                <span class="chip">Aller / retour</span>
+            </div>
+            <div style="margin-top:18px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:14px;border-top:1px solid rgba(210,157,89,0.3)">
+                <div style="font-size:0.84rem;color:var(--muted);line-height:1.7">
+                    Carburant, p&eacute;ages et frais kilom&eacute;triques inclus
+                </div>
+                <div>
+                    <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--accent);font-weight:800;text-align:right">Forfait transport</div>
+                    <div style="font-family:'Cinzel',serif;font-size:1.8rem;font-weight:800;color:#ffd999;line-height:1.1">150&nbsp;<span style="font-size:1rem">EUR</span></div>
+                </div>
+            </div>
+            <p style="font-size:0.8rem;color:rgba(255,160,80,0.85);margin-top:12px;font-weight:700">
+                &#9888;&#65039;&nbsp;Frais obligatoires &mdash; inclus dans le total ci-dessous
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="grid-2">
+            <article class="card">
+                <h2>Pr&eacute;sentation</h2>
+                <p>
+                    <span class="strong">Parvati India</span> propose des spectacles et initiations de danse Bollywood inspir&eacute;s
+                    du cin&eacute;ma indien, adapt&eacute;s aux &eacute;v&eacute;nements culturels, campings et festivals.
+                    Chaque prestation invite le public &agrave; <strong>participer et &agrave; danser</strong> avec les artistes.
+                </p>
+            </article>
+            <article class="card">
+                <h2>Contexte &eacute;v&eacute;nement</h2>
+                <p><span class="strong">Gala Bollywood</span></p>
+                <p>Lieu&nbsp;: Camping de Ronce-les-Bains, Charente-Maritime</p>
+                <p>Date&nbsp;: Samedi 26 septembre 2026</p>
+                <p>H&eacute;bergement&nbsp;: pris en charge par le camping</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section">
+        <article class="card">
+            <h2>Conditions</h2>
+            <ul style="margin-left:18px;color:var(--muted);font-size:0.9rem;display:grid;gap:10px">
+                <li>Devis valable 30 jours &agrave; compter de la date d'&eacute;mission.</li>
+                <li>Acompte de 30&nbsp;% &agrave; la r&eacute;servation, solde le jour de la prestation.</li>
+                <li>Nombre de danseuses fix&eacute; &agrave; 6, conform&eacute;ment &agrave; la contrainte d'un nombre pair pour garantir des chor&eacute;graphies harmonieuses.</li>
+                <li>Pr&eacute;voir un espace de repr&eacute;sentation d&eacute;gag&eacute; et un point d'alimentation &eacute;lectrique &agrave; proximit&eacute; (d&eacute;tails techniques transmis apr&egrave;s validation).</li>
+                <li>H&eacute;bergement sur place confirm&eacute; par le camping pour l'&eacute;quipe artistique.</li>
+            </ul>
+        </article>
+    </section>
+
+    <section class="section">
+        <div class="contact-panel">
+            <h3>Pour valider ce devis</h3>
+            <p class="contact-line">Praful Amravati &mdash; <a href="tel:0631321053">06 31 32 10 53</a></p>
+            <p class="contact-line"><a href="mailto:contact@parvati-india.fr">contact@parvati-india.fr</a></p>
+            <p class="contact-line">Site web&nbsp;: <a href="https://parvati-india.fr/" target="_blank" rel="noopener noreferrer">www.parvati-india.fr</a></p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="total-callout-hint" style="margin-bottom:20px">
+            <span class="hint-icon">&#128203;</span>
+            <span>
+                <strong style="color:#ffd999">Votre total s&rsquo;affiche ci-dessous</strong><br>
+                Le spectacle et le transport sont inclus d'office. Cochez une initiation ci-dessus si vous souhaitez l'ajouter.
+            </span>
+        </div>
+        <div class="global-total-banner" id="globalBanner" aria-live="polite">
+            <div class="global-total-label">R&eacute;capitulatif du devis</div>
+            <div class="global-total-items" id="globalItems"></div>
+            <div class="global-total-line">
+                <span>Total</span>
+                <span class="global-total-price" id="globalPrice">550 EUR</span>
+            </div>
+        </div>
+        <p style="font-size:0.78rem;color:var(--muted);margin-top:10px;text-align:right">Tarifs et disponibilit&eacute;s &agrave; confirmer selon les contraintes techniques du lieu.</p>
+    </section>
+
+    <footer class="site-footer">
+        <div class="site-footer-grid">
+            <div>
+                <img class="sf-logo" src="https://parvati-india.fr/wp-content/uploads/2023/10/LOGO-PARVATI-INDIA-2.png" alt="Logo Parvati India">
+                <p class="sf-tagline">Danse Bollywood sur Bordeaux</p>
+                <p class="sf-sub">Spectacles &amp; Cours de danse</p>
+                <div class="sf-address">
+                    Rue des pins<br>
+                    33290 Parempuyre<br>
+                    France
+                </div>
+            </div>
+            <div>
+                <span class="sf-col-title">Infos</span>
+                <ul class="sf-list">
+                    <li><span><strong>SIRET&nbsp;:</strong> 852 373 570 00013</span></li>
+                    <li><span><strong>SIREN&nbsp;:</strong> 852 373 570</span></li>
+                    <li><span><strong>E-MAIL&nbsp;:</strong> <a href="mailto:contact@parvati-india.fr">contact@parvati-india.fr</a></span></li>
+                    <li><span><strong>T&eacute;l&nbsp;:</strong> <a href="tel:0631321053">06 31 32 10 53</a></span></li>
+                    <li><span>G&eacute;rant&nbsp;: Praful Amravati</span></li>
+                </ul>
+            </div>
+            <div>
+                <span class="sf-col-title">Liens utiles</span>
+                <ul class="sf-list">
+                    <li><a href="https://parvati-india.fr/" target="_blank" rel="noopener noreferrer">www.parvati-india.fr</a></li>
+                    <li><a href="https://parvati-india.fr/mentions-legales/" target="_blank" rel="noopener noreferrer">Mentions l&eacute;gales</a></li>
+                    <li><a href="https://parvati-india.fr/politique-de-confidentialite/" target="_blank" rel="noopener noreferrer">Politique de confidentialit&eacute;</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sf-bottom">
+            <span>&copy; 2026 Parvati India &mdash; Tous droits r&eacute;serv&eacute;s</span>
+            <span>Tarifs &agrave; confirmer selon les contraintes techniques du lieu.</span>
+        </div>
+    </footer>
 </main>
+
+<div class="floating-total visible" id="floatingTotal" aria-live="polite" aria-label="Total du devis">
+    <span class="floating-total-label">Total</span>
+    <span class="floating-total-amount" id="floatingAmount">550</span>
+    <span class="floating-total-currency">EUR</span>
+</div>
+
+<script>
+(function () {
+    document.querySelectorAll('.init-card').forEach(function (c) { c.classList.remove('active'); });
+
+    var initCards = document.querySelectorAll('.init-card[data-duration]');
+    var globalPrice = document.getElementById('globalPrice');
+    var globalItems = document.getElementById('globalItems');
+    var floatingAmount = document.getElementById('floatingAmount');
+
+    var SPECTACLE_PRICE = 400;
+    var TRANSPORT_PRICE = 150;
+
+    function getInitSelected() {
+        return Array.prototype.filter.call(initCards, function (c) { return c.classList.contains('active'); });
+    }
+
+    function updateGlobalTotal() {
+        var selInit = getInitSelected();
+        var initTotal = selInit.reduce(function (sum, c) { return sum + parseInt(c.dataset.price, 10); }, 0);
+        var total = SPECTACLE_PRICE + TRANSPORT_PRICE + initTotal;
+
+        var html = '<div class="global-total-item"><span>Spectacle Bollywood &middot; 6 danseuses</span><span class="global-total-item-price">' + SPECTACLE_PRICE + ' EUR</span></div>';
+        selInit.forEach(function (c) {
+            var dur = c.dataset.duration === '60' ? '1 heure' : '30 min';
+            html += '<div class="global-total-item"><span>Initiation &middot; ' + c.dataset.audience + ' &middot; ' + dur + '</span><span class="global-total-item-price">' + c.dataset.price + ' EUR</span></div>';
+        });
+        html += '<div class="global-total-item"><span>&#128663; Transport &middot; Ronce-les-Bains</span><span class="global-total-item-price">' + TRANSPORT_PRICE + ' EUR</span></div>';
+
+        globalPrice.style.opacity = '0';
+        requestAnimationFrame(function () {
+            globalItems.innerHTML = html;
+            requestAnimationFrame(function () {
+                globalPrice.textContent = total + ' EUR';
+                globalPrice.style.opacity = '1';
+            });
+        });
+
+        floatingAmount.textContent = total;
+    }
+
+    initCards.forEach(function (card) {
+        card.addEventListener('click', function () {
+            var duration = card.dataset.duration;
+            var wasActive = card.classList.contains('active');
+            initCards.forEach(function (c) {
+                if (c.dataset.duration === duration) c.classList.remove('active');
+            });
+            if (!wasActive) card.classList.add('active');
+            updateGlobalTotal();
+        });
+    });
+
+    updateGlobalTotal();
+})();
+</script>
+
+<script>
+(function () {
+    if (!('IntersectionObserver' in window)) return;
+    var sections = document.querySelectorAll('.section');
+    sections.forEach(function (s) { s.classList.add('will-animate'); });
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animated');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.06 });
+    sections.forEach(function (s) { observer.observe(s); });
+})();
+</script>
 </body>
 </html>
