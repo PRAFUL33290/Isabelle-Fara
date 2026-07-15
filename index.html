@@ -173,22 +173,6 @@
     .section h2 { font-family: "Cinzel", serif; font-size: clamp(1.2rem, 2.2vw, 1.75rem); margin-bottom: 8px; }
     .section p.lead { color: var(--muted); margin-bottom: 18px; }
 
-    .parties { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-    .party { background: rgba(18, 18, 18, 0.92); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
-    .party-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.09em; color: var(--accent); font-weight: 800; margin-bottom: 8px; }
-    .party strong { color: #fff; }
-    .party p { font-size: 0.9rem; color: var(--muted); margin-top: 2px; }
-
-    .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: rgba(22, 22, 22, 0.95); }
-    table { width: 100%; border-collapse: collapse; min-width: 560px; }
-    th {
-        background: rgba(185, 13, 1, 0.2); color: var(--accent); text-align: left;
-        padding: 12px 14px; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.06em;
-        border-bottom: 1px solid var(--line);
-    }
-    td { padding: 13px 14px; border-bottom: 1px solid rgba(210, 157, 89, 0.2); vertical-align: top; font-size: 0.95rem; color: #eee3cf; }
-    td.num, th.num { text-align: right; white-space: nowrap; }
-    tr:last-child td { border-bottom: none; }
     .strong { font-weight: 800; }
 
     .option-box {
@@ -208,30 +192,13 @@
         border-radius: 999px; padding: 6px 11px; font-size: 0.84rem; font-weight: 700; color: #f3d39b;
     }
 
-    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
     .card { background: rgba(18, 18, 18, 0.92); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
-
-    .contact-panel {
-        background: rgba(10, 10, 10, 0.96); color: #edf4f6; border-radius: 14px; padding: 20px;
-        display: grid; gap: 10px; border: 1px solid var(--accent);
-    }
-    .contact-panel h3 { font-family: "Cinzel", serif; font-size: 1.2rem; }
-    .contact-line { color: #e8d7bc; font-weight: 600; }
-    .contact-line a { color: #ffd080; text-decoration: none; }
-    .contact-line a:hover { text-decoration: underline; }
 
     @keyframes appear { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
     @keyframes lift { from { opacity: 0; transform: translateY(16px) scale(0.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
 
-    /* Initiations Card Grid */
-    .initiation-grid-wrap { display: grid; gap: 20px; }
-    .initiation-grid-hint { font-size: 0.82rem; color: var(--muted); font-style: italic; }
-    .init-duration-label {
-        font-family: "Cinzel", serif; font-size: 1.25rem; font-weight: 700; color: #ffd999;
-        margin-bottom: 14px; padding: 10px 16px; background: rgba(185, 13, 1, 0.18);
-        border-left: 5px solid var(--accent); border-radius: 8px; letter-spacing: 0.03em;
-    }
-    .init-cards-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    /* Nombre de danseuses - Card Grid */
+    .init-cards-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
     .init-card {
         background: rgba(18, 18, 18, 0.92); border: 2px solid rgba(210, 157, 89, 0.25); border-radius: 14px;
         padding: 20px 16px; cursor: pointer; font-family: "Manrope", sans-serif; text-align: center;
@@ -249,8 +216,6 @@
         content: "\2713"; position: absolute; top: 8px; right: 10px;
         font-size: 0.82rem; color: var(--primary); font-weight: 800;
     }
-    .init-card-icon { font-size: 1.8rem; margin-bottom: 8px; display: block; }
-    .init-card-icon svg { width: 34px; height: 34px; display: block; margin: 0 auto; }
     .init-card-audience {
         font-size: 0.8rem; font-weight: 700; color: var(--muted); text-transform: uppercase;
         letter-spacing: 0.07em; margin-bottom: 10px;
@@ -329,10 +294,7 @@
     .sf-bottom a:hover { color: var(--accent); }
 
     @media (max-width: 930px) {
-        .grid-2 { grid-template-columns: 1fr; }
-        .parties { grid-template-columns: 1fr; }
         .hero, .section { padding: 24px 18px; }
-        table { min-width: 560px; }
         .init-cards-row { grid-template-columns: repeat(2, 1fr); }
         .cta-row { flex-direction: column; align-items: stretch; }
         .btn { width: 100%; justify-content: center; }
@@ -373,8 +335,8 @@
         <img class="hero-bollywood" src="https://parvati-india.fr/wp-content/uploads/2026/01/LOGO-BOLLYWOOD.png" alt="Logo Bollywood">
         <div class="event-pill">Gala Bollywood &mdash; Camping de Ronce-les-Bains &mdash; 26 septembre 2026</div>
         <h1>Devis &mdash; Spectacle de danse Bollywood</h1>
-        <p class="hero-sub">
-            Spectacle avec <strong>6 danseuses</strong>, chor&eacute;graphies inspir&eacute;es du cin&eacute;ma indien, moment participatif final o&ugrave; le public danse avec les artistes.
+        <p class="hero-sub" id="heroSub">
+            Spectacle avec <strong id="heroDancerCount">6 danseuses</strong>, chor&eacute;graphies inspir&eacute;es du cin&eacute;ma indien, moment participatif final o&ugrave; le public danse avec les artistes.
         </p>
         <div class="devis-meta">
             <span>Devis n&deg; <strong>2026-0726-ISF</strong></span>
@@ -384,133 +346,47 @@
 
         <div class="formula-grid" aria-label="Formule retenue">
             <article class="formula-card">
-                <div class="formula-label">Formule retenue</div>
-                <div class="formula-artists">6 danseuses</div>
+                <div class="formula-label">Formule s&eacute;lectionn&eacute;e</div>
+                <div class="formula-artists" id="formulaArtists">6 danseuses</div>
                 <div class="formula-detail">Dur&eacute;e : 15 &agrave; 20 minutes</div>
-                <div class="formula-price">400 EUR</div>
+                <div class="formula-price" id="formulaPrice">400 EUR</div>
                 <div style="font-size:0.75rem;color:rgba(210,157,89,0.9);font-weight:700;margin-top:4px">+ 150 EUR transport (Ronce-les-Bains)</div>
             </article>
         </div>
 
         <div class="cta-row">
-            <a class="btn btn-primary" href="mailto:Isabelle.Fara@siblu.fr?subject=Devis%20Gala%20Bollywood%20-%2026%20septembre%202026&body=Bonjour%20Isabelle%2C%0A%0AVeuillez%20trouver%20ci-joint%20le%20devis%20pour%20le%20spectacle%20Bollywood%20avec%206%20danseuses%2C%20le%2026%20septembre%202026%20%C3%A0%20Ronce-les-Bains.%0A%0ACordialement%2C%0APraful">Envoyer par email</a>
+            <a class="btn btn-primary" href="mailto:Isabelle.Fara@siblu.fr?subject=Devis%20Gala%20Bollywood%20-%2026%20septembre%202026&body=Bonjour%20Isabelle%2C%0A%0AVeuillez%20trouver%20ci-joint%20le%20devis%20pour%20le%20spectacle%20Bollywood%2C%20le%2026%20septembre%202026%20%C3%A0%20Ronce-les-Bains.%0A%0ACordialement%2C%0APraful">Envoyer par email</a>
             <a class="btn btn-secondary" href="#" onclick="window.print(); return false;">Imprimer / PDF</a>
         </div>
     </header>
 
-    <section class="section">
-        <div class="parties">
-            <div class="party">
-                <div class="party-label">Prestataire</div>
-                <strong>Parvati India</strong>
-                <p>Praful Amravati, G&eacute;rant</p>
-                <p>Rue des pins, 33290 Parempuyre, France</p>
-                <p>SIRET : 852 373 570 00013</p>
-                <p>contact@parvati-india.fr</p>
-            </div>
-            <div class="party">
-                <div class="party-label">Client</div>
-                <strong>Isabelle Fara</strong>
-                <p>Siblu &mdash; Camping de Ronce-les-Bains</p>
-                <p>Ronce-les-Bains, Charente-Maritime</p>
-                <p>Isabelle.Fara@siblu.fr</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="spectacle">
-        <h2>Spectacle Bollywood</h2>
+    <section class="section" id="prestation">
+        <h2>Choix de la prestation</h2>
         <p class="lead">
-            Chor&eacute;graphies inspir&eacute;es du cin&eacute;ma indien, avec un moment convivial final o&ugrave; les spectateurs sont invit&eacute;s &agrave; danser avec les artistes.
+            Spectacle Bollywood &mdash; chor&eacute;graphies inspir&eacute;es du cin&eacute;ma indien, avec un moment convivial final o&ugrave; les spectateurs sont invit&eacute;s &agrave; danser avec les artistes.
         </p>
-        <div class="table-wrap">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Prestation</th>
-                        <th>D&eacute;tail</th>
-                        <th class="num">Montant</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="strong">Spectacle Bollywood</td>
-                        <td>
-                            6 danseuses &mdash; chor&eacute;graphies inspir&eacute;es du cin&eacute;ma indien<br>
-                            Dur&eacute;e : 15 &agrave; 20 minutes, avec moment participatif final o&ugrave; le public est invit&eacute; &agrave; danser avec les artistes<br>
-                            <span style="font-size:0.82rem;color:var(--muted)">Prestation r&eacute;alis&eacute;e dans le cadre du gala &mdash; sans atelier d'initiation</span>
-                        </td>
-                        <td class="num strong">400,00&nbsp;&euro;</td>
-                    </tr>
-                    <tr>
-                        <td class="strong">Forfait transport</td>
-                        <td>Trajet aller/retour jusqu'&agrave; Ronce-les-Bains (carburant, p&eacute;ages, frais kilom&eacute;triques)</td>
-                        <td class="num strong">150,00&nbsp;&euro;</td>
-                    </tr>
-                    <tr>
-                        <td class="strong">H&eacute;bergement</td>
-                        <td>Pris en charge par le camping, comme convenu</td>
-                        <td class="num strong">Offert</td>
-                    </tr>
-                </tbody>
-            </table>
+
+        <h2 style="margin-top:22px">Choix du nombre de danseuses</h2>
+        <p class="lead">Pour garantir des chor&eacute;graphies harmonieuses, nos prestations sont r&eacute;alis&eacute;es uniquement avec un nombre pair de danseuses.</p>
+        <div class="init-cards-row" id="dancerCardsRow" role="group" aria-label="Nombre de danseuses">
+            <button class="init-card" data-dancers="2" data-price="150">
+                <div class="init-card-audience">2 danseuses</div>
+                <div class="init-card-price">150 <span class="init-card-currency">EUR</span></div>
+            </button>
+            <button class="init-card" data-dancers="4" data-price="280">
+                <div class="init-card-audience">4 danseuses</div>
+                <div class="init-card-price">280 <span class="init-card-currency">EUR</span></div>
+            </button>
+            <button class="init-card active" data-dancers="6" data-price="400">
+                <div class="init-card-audience">6 danseuses</div>
+                <div class="init-card-price">400 <span class="init-card-currency">EUR</span></div>
+            </button>
+            <button class="init-card" data-dancers="8" data-price="520">
+                <div class="init-card-audience">8 danseuses</div>
+                <div class="init-card-price">520 <span class="init-card-currency">EUR</span></div>
+            </button>
         </div>
-
-        <div class="option-box">
-            <div class="option-title">Option disponible sur demande</div>
-            <p>Une initiation Bollywood participative peut &ecirc;tre ajout&eacute;e en compl&eacute;ment du spectacle si vous souhaitez l'int&eacute;grer &agrave; une autre animation de votre programme. Non retenue pour ce gala.</p>
-        </div>
-    </section>
-
-    <section class="section" id="initiations">
-        <h2>Initiations danse Bollywood <span style="font-size:0.62em;color:var(--muted);font-weight:600;text-transform:none;letter-spacing:0">(option, non incluse dans le devis)</span></h2>
-        <p class="lead">Atelier participatif o&ugrave; le public apprend une courte chor&eacute;graphie Bollywood. Disponible en compl&eacute;ment du spectacle si vous souhaitez l'ajouter &agrave; votre s&eacute;lection.</p>
-
-        <div class="initiation-grid-wrap">
-            <p class="initiation-grid-hint">S&eacute;lection facultative &mdash; le total ci-dessous se met &agrave; jour automatiquement si vous cochez une option.</p>
-
-            <div>
-                <div class="init-duration-label">30 minutes</div>
-                <div class="init-cards-row" role="group" aria-label="Formules 30 minutes">
-                    <button class="init-card" data-audience="Enfants" data-duration="30" data-price="70">
-                        <span class="init-card-icon"><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="6" r="3"/><path d="M6 21v-2a6 6 0 0 1 12 0v2"/><path d="M9 11.5l1.5 3h3l1.5-3"/></svg></span>
-                        <div class="init-card-audience">Enfants</div>
-                        <div class="init-card-price">70 <span class="init-card-currency">EUR</span></div>
-                    </button>
-                    <button class="init-card" data-audience="Adultes" data-duration="30" data-price="100">
-                        <span class="init-card-icon"><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="6" r="3.5"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/></svg></span>
-                        <div class="init-card-audience">Adultes</div>
-                        <div class="init-card-price">100 <span class="init-card-currency">EUR</span></div>
-                    </button>
-                    <button class="init-card" data-audience="Mixte" data-duration="30" data-price="100">
-                        <span class="init-card-icon"><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="6" r="3"/><path d="M2 21v-2a6 6 0 0 1 12 0v2"/><circle cx="18" cy="6" r="3"/><path d="M17 21v-2a5.9 5.9 0 0 0-3-5.2"/></svg></span>
-                        <div class="init-card-audience">Mixte</div>
-                        <div class="init-card-price">100 <span class="init-card-currency">EUR</span></div>
-                    </button>
-                </div>
-            </div>
-
-            <div>
-                <div class="init-duration-label">1 heure</div>
-                <div class="init-cards-row" role="group" aria-label="Formules 1 heure">
-                    <button class="init-card" data-audience="Enfants" data-duration="60" data-price="100">
-                        <span class="init-card-icon"><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="6" r="3"/><path d="M6 21v-2a6 6 0 0 1 12 0v2"/><path d="M9 11.5l1.5 3h3l1.5-3"/></svg></span>
-                        <div class="init-card-audience">Enfants</div>
-                        <div class="init-card-price">100 <span class="init-card-currency">EUR</span></div>
-                    </button>
-                    <button class="init-card" data-audience="Adultes" data-duration="60" data-price="120">
-                        <span class="init-card-icon"><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="6" r="3.5"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/></svg></span>
-                        <div class="init-card-audience">Adultes</div>
-                        <div class="init-card-price">120 <span class="init-card-currency">EUR</span></div>
-                    </button>
-                    <button class="init-card" data-audience="Mixte" data-duration="60" data-price="120">
-                        <span class="init-card-icon"><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="6" r="3"/><path d="M2 21v-2a6 6 0 0 1 12 0v2"/><circle cx="18" cy="6" r="3"/><path d="M17 21v-2a5.9 5.9 0 0 0-3-5.2"/></svg></span>
-                        <div class="init-card-audience">Mixte</div>
-                        <div class="init-card-price">120 <span class="init-card-currency">EUR</span></div>
-                    </button>
-                </div>
-            </div>
-        </div>
+        <p style="font-size:0.8rem;color:var(--muted);margin-top:12px">Tarifs pour un nombre de danseuses autre que 6 &agrave; confirmer &mdash; devis initial &eacute;tabli pour 6 danseuses.</p>
     </section>
 
     <section class="section" id="transport">
@@ -544,45 +420,14 @@
     </section>
 
     <section class="section">
-        <div class="grid-2">
-            <article class="card">
-                <h2>Pr&eacute;sentation</h2>
-                <p>
-                    <span class="strong">Parvati India</span> propose des spectacles et initiations de danse Bollywood inspir&eacute;s
-                    du cin&eacute;ma indien, adapt&eacute;s aux &eacute;v&eacute;nements culturels, campings et festivals.
-                    Chaque prestation invite le public &agrave; <strong>participer et &agrave; danser</strong> avec les artistes.
-                </p>
-            </article>
-            <article class="card">
-                <h2>Contexte &eacute;v&eacute;nement</h2>
-                <p><span class="strong">Gala Bollywood</span></p>
-                <p>Lieu&nbsp;: Camping de Ronce-les-Bains, Charente-Maritime</p>
-                <p>Date&nbsp;: Samedi 26 septembre 2026</p>
-                <p>H&eacute;bergement&nbsp;: pris en charge par le camping</p>
-            </article>
-        </div>
-    </section>
-
-    <section class="section">
         <article class="card">
-            <h2>Conditions</h2>
-            <ul style="margin-left:18px;color:var(--muted);font-size:0.9rem;display:grid;gap:10px">
-                <li>Devis valable 30 jours &agrave; compter de la date d'&eacute;mission.</li>
-                <li>Acompte de 30&nbsp;% &agrave; la r&eacute;servation, solde le jour de la prestation.</li>
-                <li>Nombre de danseuses fix&eacute; &agrave; 6, conform&eacute;ment &agrave; la contrainte d'un nombre pair pour garantir des chor&eacute;graphies harmonieuses.</li>
-                <li>Pr&eacute;voir un espace de repr&eacute;sentation d&eacute;gag&eacute; et un point d'alimentation &eacute;lectrique &agrave; proximit&eacute; (d&eacute;tails techniques transmis apr&egrave;s validation).</li>
-                <li>H&eacute;bergement sur place confirm&eacute; par le camping pour l'&eacute;quipe artistique.</li>
-            </ul>
+            <h2>Pr&eacute;sentation</h2>
+            <p>
+                <span class="strong">Parvati India</span> propose des spectacles de danse Bollywood inspir&eacute;s
+                du cin&eacute;ma indien, adapt&eacute;s aux &eacute;v&eacute;nements culturels, campings et festivals.
+                Chaque prestation invite le public &agrave; <strong>participer et &agrave; danser</strong> avec les artistes.
+            </p>
         </article>
-    </section>
-
-    <section class="section">
-        <div class="contact-panel">
-            <h3>Pour valider ce devis</h3>
-            <p class="contact-line">Praful Amravati &mdash; <a href="tel:0631321053">06 31 32 10 53</a></p>
-            <p class="contact-line"><a href="mailto:contact@parvati-india.fr">contact@parvati-india.fr</a></p>
-            <p class="contact-line">Site web&nbsp;: <a href="https://parvati-india.fr/" target="_blank" rel="noopener noreferrer">www.parvati-india.fr</a></p>
-        </div>
     </section>
 
     <section class="section">
@@ -590,7 +435,7 @@
             <span class="hint-icon">&#128203;</span>
             <span>
                 <strong style="color:#ffd999">Votre total s&rsquo;affiche ci-dessous</strong><br>
-                Le spectacle et le transport sont inclus d'office. Cochez une initiation ci-dessus si vous souhaitez l'ajouter.
+                Il se met &agrave; jour selon le nombre de danseuses choisi ci-dessus. Le transport est inclus d'office.
             </span>
         </div>
         <div class="global-total-banner" id="globalBanner" aria-live="polite">
@@ -650,30 +495,28 @@
 
 <script>
 (function () {
-    document.querySelectorAll('.init-card').forEach(function (c) { c.classList.remove('active'); });
-
-    var initCards = document.querySelectorAll('.init-card[data-duration]');
+    var dancerCards = document.querySelectorAll('#dancerCardsRow .init-card[data-dancers]');
     var globalPrice = document.getElementById('globalPrice');
     var globalItems = document.getElementById('globalItems');
     var floatingAmount = document.getElementById('floatingAmount');
+    var heroDancerCount = document.getElementById('heroDancerCount');
+    var formulaArtists = document.getElementById('formulaArtists');
+    var formulaPrice = document.getElementById('formulaPrice');
 
-    var SPECTACLE_PRICE = 400;
     var TRANSPORT_PRICE = 150;
 
-    function getInitSelected() {
-        return Array.prototype.filter.call(initCards, function (c) { return c.classList.contains('active'); });
+    function getSelectedDancerCard() {
+        return Array.prototype.filter.call(dancerCards, function (c) { return c.classList.contains('active'); })[0]
+            || dancerCards[0];
     }
 
     function updateGlobalTotal() {
-        var selInit = getInitSelected();
-        var initTotal = selInit.reduce(function (sum, c) { return sum + parseInt(c.dataset.price, 10); }, 0);
-        var total = SPECTACLE_PRICE + TRANSPORT_PRICE + initTotal;
+        var selected = getSelectedDancerCard();
+        var dancers = selected.dataset.dancers;
+        var spectaclePrice = parseInt(selected.dataset.price, 10);
+        var total = spectaclePrice + TRANSPORT_PRICE;
 
-        var html = '<div class="global-total-item"><span>Spectacle Bollywood &middot; 6 danseuses</span><span class="global-total-item-price">' + SPECTACLE_PRICE + ' EUR</span></div>';
-        selInit.forEach(function (c) {
-            var dur = c.dataset.duration === '60' ? '1 heure' : '30 min';
-            html += '<div class="global-total-item"><span>Initiation &middot; ' + c.dataset.audience + ' &middot; ' + dur + '</span><span class="global-total-item-price">' + c.dataset.price + ' EUR</span></div>';
-        });
+        var html = '<div class="global-total-item"><span>Spectacle Bollywood &middot; ' + dancers + ' danseuses</span><span class="global-total-item-price">' + spectaclePrice + ' EUR</span></div>';
         html += '<div class="global-total-item"><span>&#128663; Transport &middot; Ronce-les-Bains</span><span class="global-total-item-price">' + TRANSPORT_PRICE + ' EUR</span></div>';
 
         globalPrice.style.opacity = '0';
@@ -686,16 +529,15 @@
         });
 
         floatingAmount.textContent = total;
+        heroDancerCount.textContent = dancers + ' danseuses';
+        formulaArtists.textContent = dancers + ' danseuses';
+        formulaPrice.textContent = spectaclePrice + ' EUR';
     }
 
-    initCards.forEach(function (card) {
+    dancerCards.forEach(function (card) {
         card.addEventListener('click', function () {
-            var duration = card.dataset.duration;
-            var wasActive = card.classList.contains('active');
-            initCards.forEach(function (c) {
-                if (c.dataset.duration === duration) c.classList.remove('active');
-            });
-            if (!wasActive) card.classList.add('active');
+            dancerCards.forEach(function (c) { c.classList.remove('active'); });
+            card.classList.add('active');
             updateGlobalTotal();
         });
     });
