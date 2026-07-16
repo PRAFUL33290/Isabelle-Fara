@@ -345,6 +345,15 @@ h1 {
 .party strong { color: #fff; }
 .party p { font-size: 0.9rem; color: var(--muted); margin-top: 2px; }
 .party a, .party a:link, .party a:visited { color: inherit; text-decoration: none; }
+.party-logo {
+    display: block;
+    height: 34px;
+    width: auto;
+    margin-bottom: 12px;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 6px 12px;
+}
 
 .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: rgba(22, 22, 22, 0.95); }
 table { width: 100%; border-collapse: collapse; min-width: 560px; }
