@@ -133,26 +133,26 @@ body::before {
 }
 
 .hero {
-    padding: clamp(110px, 16vw, 140px) clamp(16px, 6vw, 80px) clamp(24px, 4vw, 40px);
-    background:
-        linear-gradient(130deg, rgba(185, 13, 1, 0.9), rgba(143, 12, 2, 0.82)),
-        url("https://parvati-india.fr/wp-content/uploads/2023/10/Devotional-Background-For-god-worship-Animation-video.00_00_09_20.Still001.jpg") center/cover;
-    color: var(--white);
-    border-bottom: 2px solid var(--accent);
-    text-align: center;
-    position: relative;
-}
-
-/* Hero du devis (index) : fond cinematique sombre + layout 2 colonnes */
-.hero-devis {
-    text-align: left;
-    padding-bottom: clamp(36px, 5vw, 64px);
+    padding: clamp(110px, 16vw, 140px) clamp(16px, 6vw, 80px) clamp(36px, 5vw, 64px);
     background:
         radial-gradient(circle at 82% 30%, rgba(185, 13, 1, 0.4), transparent 50%),
         radial-gradient(circle at 8% 85%, rgba(210, 157, 89, 0.16), transparent 45%),
         linear-gradient(180deg, rgba(8, 3, 1, 0.62) 0%, rgba(12, 5, 2, 0.86) 62%, rgba(8, 4, 2, 0.97) 100%),
         url("https://parvati-india.fr/wp-content/uploads/2023/10/Devotional-Background-For-god-worship-Animation-video.00_00_09_20.Still001.jpg") center/cover;
+    color: var(--white);
     border-bottom: 1px solid rgba(210, 157, 89, 0.45);
+    text-align: center;
+    position: relative;
+    min-height: clamp(320px, 42vw, 420px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Hero du devis (index) : layout 2 colonnes aligne a gauche */
+.hero-devis {
+    text-align: left;
+    display: block;
 }
 
 .hero-grid {
@@ -331,6 +331,14 @@ td.num, th.num { text-align: right; white-space: nowrap; }
 tr:last-child td { border-bottom: none; }
 .strong { font-weight: 800; }
 
+.total-row td {
+    background: rgba(210, 157, 89, 0.1);
+    border-top: 2px solid var(--accent);
+    border-bottom: none;
+    font-size: 1.05rem;
+}
+.total-row td.num { font-family: "Cinzel", serif; font-size: 1.35rem; font-weight: 800; color: #ffd999; }
+
 .option-box {
     margin-top: 16px;
     background: rgba(185, 13, 1, 0.14);
@@ -378,32 +386,6 @@ tr:last-child td { border-bottom: none; }
 .floating-total-amount { font-family: "Cinzel", serif; font-size: 1.15rem; font-weight: 800; color: #ffffff; line-height: 1.1; }
 .floating-total-currency { font-size: 0.62rem; color: rgba(255,255,255,0.65); font-weight: 700; letter-spacing: 0.05em; }
 
-.total-callout-hint {
-    display: flex; align-items: center; gap: 10px; background: rgba(210, 157, 89, 0.10);
-    border: 1px solid rgba(210, 157, 89, 0.45); border-radius: 12px; padding: 14px 18px;
-    margin-bottom: 0; font-size: 0.9rem; font-weight: 600; color: #f3d39b;
-}
-.total-callout-hint .hint-icon { font-size: 1.4rem; flex-shrink: 0; }
-
-.global-total-banner {
-    background: linear-gradient(135deg, rgba(185, 13, 1, 0.22), rgba(0, 0, 0, 0.7));
-    border: 2px solid var(--accent); border-radius: 16px; padding: 24px 28px;
-}
-.global-total-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.09em; color: var(--accent); font-weight: 800; margin-bottom: 16px; }
-.global-total-items { display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px; }
-.global-total-item {
-    display: flex; justify-content: space-between; align-items: center; padding: 10px 14px;
-    background: rgba(0, 0, 0, 0.32); border: 1px solid rgba(210, 157, 89, 0.28); border-radius: 10px;
-    font-size: 0.92rem; font-weight: 600; color: #f3d39b;
-}
-.global-total-item-price { font-weight: 800; color: #ffd999; white-space: nowrap; margin-left: 16px; }
-.global-total-line {
-    display: flex; justify-content: space-between; align-items: center;
-    border-top: 1px solid rgba(210, 157, 89, 0.45); padding-top: 16px;
-    font-family: "Cinzel", serif; font-size: 1.05rem; font-weight: 700; color: #ffd999;
-}
-.global-total-price { font-size: 2.2rem; font-weight: 800; color: #ffffff; transition: opacity 0.15s ease; }
-
 /* Selecteur nombre de danseurs */
 .dancer-selector {
     margin-top: 18px; display: flex; align-items: center; justify-content: center; gap: 16px;
@@ -450,7 +432,6 @@ tr:last-child td { border-bottom: none; }
 @media (max-width: 600px) {
     h1 { font-size: 1.35rem; }
     .site-header { justify-content: center; text-align: center; }
-    .global-total-banner { padding: 18px 16px; }
     .floating-total { width: 74px; height: 74px; bottom: 16px; right: 16px; }
     .floating-total-amount { font-size: 0.95rem; }
     .sf-bottom { flex-direction: column; align-items: flex-start; }
