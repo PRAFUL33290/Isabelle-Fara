@@ -80,7 +80,7 @@ body::before {
     transition: background 0.15s ease, transform 0.15s ease;
 }
 .btn-call svg { width: 16px; height: 16px; flex-shrink: 0; }
-.btn-call:hover { background: var(--primary-deep); transform: translateY(-1px); }
+.btn-call:hover { transform: translateY(-1px); }
 
 /* Burger menu (mobile) */
 .burger-btn {
@@ -301,9 +301,9 @@ h1 {
     transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease;
 }
 .btn-primary { background: var(--primary); color: var(--white); }
-.btn-primary:hover { background: var(--primary-deep); transform: translateY(-1px); }
+.btn-primary:hover { transform: translateY(-1px); }
 .btn-secondary { background: transparent; border-color: rgba(210, 157, 89, 0.9); color: #ffe0ad; }
-.btn-secondary:hover { background: rgba(255, 255, 255, 0.12); }
+.btn-secondary:hover { transform: translateY(-1px); }
 
 .section { padding: clamp(24px, 4vw, 48px) clamp(16px, 6vw, 80px); border-top: 1px solid var(--line); background: rgba(10, 10, 10, 0.85); opacity: 1; }
 .section.will-animate { opacity: 0; transform: translateY(10px); transition: opacity 0.45s ease, transform 0.45s ease; }
