@@ -188,35 +188,13 @@ body::before {
 .client-badge-logo { height: 30px; width: auto; display: block; }
 
 .client-request {
-    position: relative;
-    background: rgba(0, 0, 0, 0.4);
-    border-left: 3px solid var(--accent);
-    border-radius: 4px 12px 12px 4px;
-    padding: 18px 22px 16px 52px;
+    font-family: "Cinzel", serif;
+    font-style: italic;
+    font-size: clamp(0.95rem, 1.6vw, 1.12rem);
+    color: #e8ddc9;
+    opacity: 0.9;
     margin: 0 0 22px;
     animation: appear 0.5s ease;
-}
-.client-request-quote {
-    position: absolute;
-    top: 16px;
-    left: 18px;
-    width: 22px;
-    height: 22px;
-    color: rgba(210, 157, 89, 0.55);
-}
-.client-request p {
-    font-size: clamp(1.05rem, 1.9vw, 1.32rem);
-    line-height: 1.5;
-    color: #f5ecd9;
-    font-weight: 600;
-}
-.client-request p + p { margin-top: 10px; }
-.client-request footer {
-    margin-top: 12px;
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: var(--accent);
-    font-style: normal;
 }
 
 .event-highlight {
