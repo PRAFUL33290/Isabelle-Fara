@@ -167,6 +167,27 @@ body::before {
 .hero-bollywood { width: min(300px, 62vw); margin: 6px auto 18px; display: block; }
 .hero-devis .hero-bollywood { margin: 0 0 18px; width: min(240px, 55vw); filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.6)); animation: appear 0.45s ease; }
 
+.event-highlight {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    margin-bottom: 14px;
+    animation: appear 0.4s ease;
+}
+.event-highlight-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.92rem;
+    font-weight: 800;
+    color: #ffe4b5;
+    background: rgba(185, 13, 1, 0.18);
+    border: 1px solid rgba(210, 157, 89, 0.55);
+    border-radius: 999px;
+    padding: 8px 16px;
+}
+.event-highlight-item svg { width: 17px; height: 17px; flex-shrink: 0; color: var(--accent); }
+
 .hero-eyebrow {
     font-size: 0.8rem;
     font-weight: 800;
@@ -232,6 +253,12 @@ h1 {
     padding: 5px 12px;
 }
 .hero-meta strong { color: #fff; }
+.hero-meta-deadline {
+    color: #ffd3b0 !important;
+    background: rgba(185, 13, 1, 0.28) !important;
+    border-color: rgba(255, 160, 80, 0.6) !important;
+    font-weight: 700;
+}
 
 .formula-grid {
     display: flex;
