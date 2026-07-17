@@ -416,6 +416,18 @@ tr:last-child td { border-bottom: none; }
 .option-title { font-weight: 800; color: #ffdca8; margin-bottom: 4px; font-size: 0.92rem; }
 .option-box p { font-size: 0.88rem; color: #ddd2be; }
 
+.note-right { font-size: 0.78rem; color: var(--muted); margin-top: 10px; text-align: right; }
+.price-row {
+    margin-top: 18px; display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 12px; padding-top: 14px; border-top: 1px solid rgba(210, 157, 89, 0.3);
+}
+.price-row-note { font-size: 0.84rem; color: var(--muted); line-height: 1.7; }
+.price-row-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); font-weight: 800; text-align: right; }
+.price-row-value { font-family: "Cinzel", serif; font-size: 1.8rem; font-weight: 800; color: #ffd999; line-height: 1.1; }
+.price-row-value small { font-size: 1rem; }
+
+.conditions-list { margin-left: 18px; color: var(--muted); font-size: 0.9rem; display: grid; gap: 10px; }
+
 .chips { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px; }
 .chip {
     background: rgba(0, 0, 0, 0.65); border: 1px solid rgba(210, 157, 89, 0.35);
@@ -500,11 +512,39 @@ tr:last-child td { border-bottom: none; }
     .site-header { justify-content: center; text-align: center; }
     .floating-total { width: 74px; height: 74px; bottom: 16px; right: 16px; }
     .floating-total-amount { font-size: 0.95rem; }
-    .sf-bottom { flex-direction: column; align-items: flex-start; }
+    .sf-bottom { flex-direction: column; align-items: center; text-align: center; }
     body { background: #000000; }
     body::before { display: none; }
     .cta-row { flex-direction: column; align-items: stretch; }
     .btn { width: 100%; justify-content: center; }
+
+    /* Centrage horizontal general sur mobile */
+    .section { text-align: center; }
+    .section .lead { margin-left: auto; margin-right: auto; }
+
+    .parties { justify-items: center; text-align: center; }
+    .party { align-items: center; display: flex; flex-direction: column; }
+    .party-logo { margin-left: auto; margin-right: auto; }
+
+    .grid-2 { text-align: center; justify-items: center; }
+    .card { width: 100%; }
+    .conditions-list { margin: 0 auto; text-align: center; list-style-position: inside; padding-left: 0; }
+
+    .table-wrap { margin-left: auto; margin-right: auto; }
+
+    .contact-panel { text-align: center; justify-items: center; }
+
+    .event-highlight { justify-content: center; }
+
+    .site-footer-grid { text-align: center; justify-items: center; }
+    .sf-logo { margin-left: auto; margin-right: auto; }
+    .sf-col-title { margin-left: auto; margin-right: auto; }
+    .sf-list { align-items: center; }
+    .sf-list li { justify-content: center; }
+
+    .note-right { text-align: center; }
+    .price-row { justify-content: center; text-align: center; }
+    .price-row-label { text-align: center; }
 }
 
 @media print {
