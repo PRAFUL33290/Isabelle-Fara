@@ -157,11 +157,10 @@ body::before {
 
 .hero-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+    grid-template-columns: minmax(0, 1fr) minmax(380px, 1fr);
     gap: clamp(28px, 5vw, 64px);
     align-items: center;
-    max-width: 1150px;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .hero-bollywood { width: min(300px, 62vw); margin: 6px auto 18px; display: block; }
@@ -305,25 +304,25 @@ h1 {
         0 24px 60px rgba(0, 0, 0, 0.55),
         0 0 0 6px rgba(210, 157, 89, 0.08),
         inset 0 1px 0 rgba(255, 228, 181, 0.25);
-    padding: 26px 28px;
-    width: min(360px, 100%);
+    padding: 38px 40px;
+    width: min(480px, 100%);
     display: grid;
-    gap: 8px;
+    gap: 12px;
 }
 
-.formula-currency { font-size: 1rem; font-weight: 700; color: rgba(255, 217, 153, 0.8); }
-.formula-transport { font-size: 0.75rem; color: rgba(210, 157, 89, 0.9); font-weight: 700; margin-top: 4px; }
+.formula-currency { font-size: 1.2rem; font-weight: 700; color: rgba(255, 217, 153, 0.8); }
+.formula-transport { font-size: 0.88rem; color: rgba(210, 157, 89, 0.9); font-weight: 700; margin-top: 6px; }
 
 .formula-hint {
-    font-size: 0.76rem;
+    font-size: 0.88rem;
     font-weight: 600;
     color: rgba(255, 228, 181, 0.85);
     text-align: center;
-    margin-top: 6px;
+    margin-top: 8px;
 }
 
 .formula-label {
-    font-size: 0.76rem;
+    font-size: 0.9rem;
     letter-spacing: 0.09em;
     text-transform: uppercase;
     color: var(--accent);
@@ -332,13 +331,13 @@ h1 {
 
 .formula-artists {
     font-family: "Cinzel", serif;
-    font-size: clamp(1.45rem, 2.7vw, 2rem);
+    font-size: clamp(1.8rem, 3.4vw, 2.6rem);
     line-height: 1.2;
     color: #ffffff;
 }
 
-.formula-detail { font-size: 0.95rem; color: #ddd2be; font-weight: 600; }
-.formula-price { margin-top: 4px; font-size: 2rem; font-weight: 800; color: #ffd999; line-height: 1.1; }
+.formula-detail { font-size: 1.1rem; color: #ddd2be; font-weight: 600; }
+.formula-price { margin-top: 6px; font-size: 2.6rem; font-weight: 800; color: #ffd999; line-height: 1.1; }
 
 .cta-row { margin-top: 18px; display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
 .hero-devis .cta-row { justify-content: flex-start; margin-top: 0; animation: appear 0.7s ease; }
@@ -452,21 +451,21 @@ tr:last-child td { border-bottom: none; }
 .floating-total-amount { font-family: "Cinzel", serif; font-size: 1.15rem; font-weight: 800; color: #ffffff; line-height: 1.1; }
 .floating-total-currency { font-size: 0.62rem; color: rgba(255,255,255,0.65); font-weight: 700; letter-spacing: 0.05em; }
 
-/* Selecteur nombre de danseurs */
-.dancer-selector {
-    margin-top: 18px; display: flex; align-items: center; justify-content: center; gap: 16px;
-    background: rgba(0, 0, 0, 0.55); border: 1px solid rgba(210, 157, 89, 0.4); border-radius: 12px;
-    padding: 12px 18px;
+/* Selecteur solution (4 vs 6 danseurs) */
+.solution-toggle {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
+    margin-bottom: 6px;
 }
-.dancer-selector-label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); font-weight: 800; }
-.dancer-step-btn {
-    width: 34px; height: 34px; border-radius: 50%; border: 2px solid var(--accent); background: transparent;
-    color: #ffe0ad; font-size: 1.1rem; font-weight: 800; cursor: pointer; display: flex; align-items: center; justify-content: center;
-    transition: background 0.15s ease, transform 0.15s ease;
+.solution-btn {
+    display: flex; flex-direction: column; align-items: center; gap: 4px;
+    background: rgba(0, 0, 0, 0.55); border: 2px solid rgba(210, 157, 89, 0.4); border-radius: 14px;
+    padding: 16px 10px; cursor: pointer; color: #f7f0e1;
+    transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
 }
-.dancer-step-btn:hover:not(:disabled) { background: rgba(210, 157, 89, 0.2); transform: translateY(-1px); }
-.dancer-step-btn:disabled { opacity: 0.35; cursor: not-allowed; }
-.dancer-count-value { font-family: "Cinzel", serif; font-size: 1.4rem; font-weight: 800; color: #ffffff; min-width: 34px; text-align: center; }
+.solution-btn:hover { transform: translateY(-1px); border-color: rgba(210, 157, 89, 0.7); }
+.solution-btn.active { background: rgba(185, 13, 1, 0.28); border-color: var(--accent); }
+.solution-btn-title { font-size: 0.86rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--accent); font-weight: 800; }
+.solution-btn-sub { font-family: "Cinzel", serif; font-size: 1.4rem; font-weight: 800; color: #ffffff; }
 
 /* Site Footer */
 .site-footer { background: #000000; border-top: 2px solid rgba(210, 157, 89, 0.4); padding: clamp(28px, 4vw, 48px) clamp(16px, 6vw, 80px) 24px; }
